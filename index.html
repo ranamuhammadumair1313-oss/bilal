@@ -3,80 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BILAL | Gaming Universe</title>
+    <title>BILAL - PUBG Rank Push Services</title>
     <style>
-        /* General Styles */
+        /* Gaming Theme CSS */
         body {
             margin: 0;
-            padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0b0c10;
-            color: white;
-            scroll-behavior: smooth;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: rgba(0, 0, 0, 0.8);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 2px solid #66fcf1;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #66fcf1;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #45a29e;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 80vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://wallpaperaccess.com/full/1151325.jpg'); /* PUBG Background */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            color: #ffffff;
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 10px #66fcf1;
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            padding: 100px 20px;
+            border-bottom: 4px solid #66fcf1;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            color: #c5c6c7;
-            margin-bottom: 20px;
+        h1 {
+            font-size: 4rem;
+            color: #66fcf1;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .highlight {
+            color: #45a29e;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        .promo-box {
+            background-color: #1f2833;
+            border: 2px solid #66fcf1;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            max-width: 600px;
         }
 
         .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px 10px;
             background-color: #66fcf1;
             color: #0b0c10;
-            padding: 12px 30px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
@@ -85,94 +61,71 @@
 
         .btn:hover {
             background-color: #45a29e;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
-        /* Gallery Section */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+
         .gallery {
-            padding: 50px 10%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 40px;
         }
 
-        .gallery h2 {
-            color: #66fcf1;
-            margin-bottom: 30px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .grid img {
-            width: 100%;
-            border-radius: 10px;
+        .gallery img {
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
             border: 2px solid #45a29e;
-            transition: 0.4s;
         }
 
-        .grid img:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(102, 252, 241, 0.4);
-        }
-
-        /* Footer */
         footer {
-            background: #1f2833;
-            padding: 30px;
-            text-align: center;
-            border-top: 2px solid #66fcf1;
-        }
-
-        .social-link {
-            color: #66fcf1;
-            font-size: 1.5rem;
-            text-decoration: none;
-            border: 1px solid #66fcf1;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-
-        .social-link:hover {
-            background: #66fcf1;
-            color: #0b0c10;
+            background-color: #1f2833;
+            padding: 20px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">BILAL</div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#youtube">YouTube</a>
+    <header>
+        <h1>BILAL</h1>
+        <p style="font-size: 1.5rem;">Professional PUBG Mobile Rank Push Service</p>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to the Battleground</h2>
+        <p>Expert gaming services and top-tier gameplay content.</p>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=400" alt="PUBG 1">
+            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400" alt="PUBG 2">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400" alt="PUBG 3">
         </div>
-    </nav>
 
-    <section class="hero">
-        <h1>WELCOME TO THE WARZONE</h1>
-        <p>Pro Gaming | PUBG Mobile | Daily Highlights</p>
-        <a href="https://www.youtube.com/@DIABLOMINATTI" target="_blank" class="btn">SUBSCRIBE NOW</a>
-    </section>
-
-    <section class="gallery" id="gallery">
-        <h2>PUBG MOMENTS</h2>
-        <div class="grid">
-            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500" alt="Gaming Setup">
-            <img src="https://wallpaperaccess.com/full/1563539.jpg" alt="PUBG Action">
-            <img src="https://wallpaperaccess.com/full/1151325.jpg" alt="PUBG Soldier">
-            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500" alt="PUBG Theme">
+        <div class="promo-box">
+            <h3>Rank Push Offer!</h3>
+            <p>Agar kisi ne PUBG mein **Rank Push** kar wana hu to niche diye gaye number par rabta kare.</p>
+            <p><strong>WhatsApp:</strong> 03056202526</p>
+            <a href="https://wa.me/923056202526" class="btn whatsapp-btn">Chat on WhatsApp</a>
         </div>
-    </section>
 
-    <section id="youtube" style="text-align: center; padding: 50px; background: #0b0c10;">
-        <h2 style="color: #66fcf1;">MY YOUTUBE CHANNEL</h2>
-        <p>Check out my latest gameplay on DIABLOMINATTI</p>
-        <br>
-        <a href="https://www.youtube.com/@DIABLOMINATTI" target="_blank" class="social-link">Visit DIABLOMINATTI</a>
-    </section>
+        <div style="margin-top: 50px;">
+            <h3>Follow My YouTube Channel</h3>
+            <p>Check out my latest gameplay and montages.</p>
+            <a href="https://www.youtube.com/@DIABLOMINATTI" target="_blank" class="btn">Visit DIABLOMINATTI</a>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 BILAL GAMING. All Rights Reserved.</p>
